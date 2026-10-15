@@ -1,0 +1,43 @@
+/* clear all inbuilt margins */
+*{
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-image: url("images/RedBlue_Plaid.jpg");
+}
+#card-container{
+    width:360px;
+    height:180px;
+    border: solid;
+    display: flex;
+    background-image: url(images/Blue_Space.jpg);
+    filter: drop-shadow(0 0 10px black)
+}
+#picture-panel{
+    width:180px;
+    height:180px;
+    border: solid #bb1515;
+}
+#info-panel{
+    width:200px;
+    height:180px;
+    border: solid steelblue;
+}
+#mugshot{
+    width: 180px;
+    height:180px;
+    object-fit: cover;
+    margin-left:0px;
+    margin-top:0px;
+}
+p{
+     font-family: "Pixelify Sans", sans-serif;
+     margin-top:12px;
+     margin-left:5px;
+     color:white;
+}

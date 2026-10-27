@@ -27,6 +27,18 @@ body{
     position: relative;
     justify-content: center;
 align-items: center;
+     background-image: url("images/landscape.jpg");
+background-size: cover;
+
+}
+#picture-panel-front:hover{
+    background-image: url("images/Green_Plaid.png");
+}
+#hidden-panel:hover{
+    display:block;
+}
+#info-panel:hover{
+    display:none;
 }
 #info-panel{
     width:500px;
@@ -35,8 +47,16 @@ align-items: center;
      bottom: 10px;
      left: 50px;
 }
+#hidden-panel{
+    width:500px;
+    height:100px;
+     position: fixed;
+     bottom: 10px;
+     left: 50px;
+     display:none;
+}
 #mugshot{
-    width: 500px;
+    width: 550px;
     height:auto;
     object-fit: cover;
     margin-left:0px;

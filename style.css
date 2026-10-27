@@ -8,36 +8,63 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-     background-image: url("images/RedBlue_Plaid.jpg");
+     background-image: url("images/WoodTexture3.jpg");
 }
 #card-container{
-    width:360px;
-    height:180px;
+    width:600px;
+    height:400px;
     border: solid;
     display: flex;
-    background-image: url(images/Blue_Space.jpg);
-    filter: drop-shadow(0 0 10px black)
+    background-color: rgb(221, 215, 210);
+    filter: drop-shadow(10px 10px 10px black)
 }
-#picture-panel{
-    width:180px;
-    height:180px;
-    border: solid #bb1515;
+#picture-panel-front{
+    width:600px;
+    height:auto;
+    border: solid #615050;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+align-items: center;
 }
 #info-panel{
-    width:200px;
-    height:180px;
-    border: solid steelblue;
+    width:500px;
+    height:100px;
+     position: fixed;
+     bottom: 10px;
+     left: 50px;
 }
 #mugshot{
-    width: 180px;
-    height:180px;
+    width: 500px;
+    height:auto;
     object-fit: cover;
     margin-left:0px;
     margin-top:0px;
 }
 p{
-     font-family: "Pixelify Sans", sans-serif;
+     font-family: "Tangerine", cursive;
      margin-top:12px;
-     margin-left:5px;
-     color:white;
+     margin-left:3px;
+     color:rgb(29, 22, 22);
+}
+
+H1 {
+         font-family: "Tangerine", cursive;
+         font-size: 3.5rem;
+     margin-top:12px;
+     margin-left:4px;
+     color:rgb(212, 199, 199);
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
 }

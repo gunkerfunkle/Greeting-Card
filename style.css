@@ -24,6 +24,20 @@ body{
 #card-container:hover #picture-panel-front #info-panel{
     display:none;
 }
+#card-container:hover #picture-panel-front h1{
+    color:black;
+    margin-top:-125px;
+     margin-left:0px;
+    
+}
+
+#card-container:hover #picture-panel-front #stamp{
+    margin-top: -143px;
+     margin-left:450px;
+     position: absolute;
+     width: 65px;
+     height: 90px;
+}
 #picture-panel-front{
     width:600px;
     height:auto;
@@ -38,7 +52,7 @@ background-size: cover;
 
 }
 #picture-panel-front:hover{
-    background-image: url("images/Green_Plaid.png");
+    background-image: url("images/Postcard-back.jpg");
 }
 #info-panel{
     width:500px;
@@ -88,30 +102,37 @@ h1 {
   font-weight: 700;
   font-style: normal;
 }
+.niconne-regular {
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
 @media (max-width: 600px) {
     #card-container {
-        width: 100%;
-        height: 30%;
-        flex-direction: column;
+        width: min-content(100%);
+        height: min-content(30%);
+        flex-direction: row-reverse;
     }
 
     #picture-panel-front{
-        width: 100%;
-        height: 100%;
+        width: min-content(100%);
+        height: min-content(30%);
         flex-direction: column;
     }
 
     #info-panel, #hidden-panel {
-        position: static;
-        width: auto;
-        height: auto;
-        margin-top: 10px;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin-bottom: -300px;
+        margin-left: 0px;
     }
 
     h1 {
          font-family: "Tangerine", cursive;
          font-size: 3.5rem;
          color:rgb(212, 199, 199);
+         position: relative;
     }
 }
